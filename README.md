@@ -59,3 +59,27 @@ QuickShort/
 ├── popup.js           # Popup Logic (API calls & UI handling)
 └── icons/
     └── icon-48.png    # App Icon
+```
+
+---
+
+## 💻 Technical Highlights
+This project demonstrates the migration to **Manifest V3**:
+
+*   **Service Workers:** Replaces persistent background pages for 0% memory usage when idle.
+*   **Scripting API:** Uses `chrome.scripting.executeScript` to inject clipboard commands into the active tab (bypassing V3 background limitations).
+*   **Security:** Uses `activeTab` permission to ensure data is only accessed when the user triggers the extension.
+
+## 🔗 API Reference
+This project relies on the public **TinyURL API**:
+
+*   **Endpoint:** `https://tinyurl.com/api-create.php`
+*   **Method:** `GET`
+*   **Params:** `url`, `alias`
+
+## 👨‍💻 Author
+**Pratham**
+*Computer Science Department*
+
+---
+*Developed for Educational Purposes.*
