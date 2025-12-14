@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "QuickShort – Url Shortener",
+  "version": "1.0",
+  "description": "Right-click for instant short link, or click icon for custom alias.",
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://tinyurl.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon-48.png"
+  },
+  "icons": {
+    "48": "icons/icon-48.png"
+  }
+}
